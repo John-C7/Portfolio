@@ -1,2 +1,3 @@
 # Portfolio
-Portfolio Website using NextJs
+
+Portfolio Website using React
