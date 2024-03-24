@@ -3,7 +3,6 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/Project-1.png";
 // import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/Project-3.png";
-// import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -14,33 +13,41 @@ export const Projects = () => {
       description:
         "Developed an interactive website using R programming to help users find EV Charging stations in India",
       imgUrl: projImg1,
+      githubUrl: "https://github.com/example/ev-charging",
     },
     {
       title: "React Mutiplayer Game",
       description: "Developed a react multiplayer game for Tic-Tac-Toe ",
       imgUrl: projImg1,
+      githubUrl: "https://github.com/example/ev-charging",
     },
     {
       title: "Gramma Yojana Suchane",
       description:
         "Contributed to the development of the Farmers website for providing information about the Gram Panchayats and to keep farmers updated about the lastest government schemes and news",
       imgUrl: projImg3,
+      githubUrl: "https://github.com/John-C7/grama-yojane-suchana",
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: "",
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: "",
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: "",
-    // },
+    {
+      title: "EV-Charging",
+      description:
+        "Developed an interactive website using R programming to help users find EV Charging stations in India",
+      imgUrl: projImg1,
+      githubUrl: "https://github.com/example/ev-charging",
+    },
+    {
+      title: "React Mutiplayer Game",
+      description: "Developed a react multiplayer game for Tic-Tac-Toe ",
+      imgUrl: projImg1,
+      githubUrl: "https://github.com/example/ev-charging",
+    },
+    {
+      title: "Gramma Yojana Suchane",
+      description:
+        "Contributed to the development of the Farmers website for providing information about the Gram Panchayats and to keep farmers updated about the lastest government schemes and news",
+      imgUrl: projImg3,
+      githubUrl: "https://github.com/example/ev-charging",
+    },
   ];
 
   return (
@@ -89,22 +96,18 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <Row>
+                          {projects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <Row>
+                          {projects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
