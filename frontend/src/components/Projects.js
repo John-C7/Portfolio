@@ -1,8 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/Project-1.png";
-// import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/Project-3.png";
+import projImg1 from "../assets/img/Project-1.jpg";
+import projImg3 from "../assets/img/Project-3.jpg";
+import webtutor from "../assets/img/Web_Tutor.png";
+import automated from "../assets/img/Dbms_Project.jpg";
+import asl_web from "../assets/img/ASL_Web.jpg";
+import react_game from "../assets/img/tic-tac.jpg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -11,15 +14,23 @@ export const Projects = () => {
     {
       title: "EV-Charging",
       description:
-        "Developed an interactive website using R programming to help users find EV Charging stations in India",
+        "Developed an interactive website using R programming to help users find EV Charging stations in India using Kaggle Dataset having the coordinates of the chargers",
       imgUrl: projImg1,
-      githubUrl: "https://github.com/example/ev-charging",
+      githubUrl: "https://github.com/John-C7/EV-Charging-Stations",
     },
     {
       title: "React Mutiplayer Game",
-      description: "Developed a react multiplayer game for Tic-Tac-Toe ",
-      imgUrl: projImg1,
-      githubUrl: "https://github.com/example/ev-charging",
+      description:
+        "Developed a react multiplayer game for Tic-Tac-Toe by using Socket-IO connections",
+      imgUrl: react_game,
+      githubUrl: "https://github.com/John-C7/Multiplayer-React-Game-1",
+    },
+    {
+      title: "Automated-Attendance",
+      description:
+        "Face-Recognition based system for adding students attendance, using React, Nodejs and Mysql on AWS RDS",
+      imgUrl: automated,
+      githubUrl: "https://github.com/John-C7/Automated-Attendance",
     },
     {
       title: "Gramma Yojana Suchane",
@@ -29,24 +40,18 @@ export const Projects = () => {
       githubUrl: "https://github.com/John-C7/grama-yojane-suchana",
     },
     {
-      title: "EV-Charging",
+      title: "Web-Tutor",
       description:
-        "Developed an interactive website using R programming to help users find EV Charging stations in India",
-      imgUrl: projImg1,
-      githubUrl: "https://github.com/example/ev-charging",
+        "Online Learning Platform built for one-on-one tutoring , which secured price in The best report generation category in Enigma Hackathon in JIT",
+      imgUrl: webtutor,
+      githubUrl: "https://github.com/John-C7/Web-Tutor",
     },
     {
-      title: "React Mutiplayer Game",
-      description: "Developed a react multiplayer game for Tic-Tac-Toe ",
-      imgUrl: projImg1,
-      githubUrl: "https://github.com/example/ev-charging",
-    },
-    {
-      title: "Gramma Yojana Suchane",
+      title: "ASL-Web",
       description:
-        "Contributed to the development of the Farmers website for providing information about the Gram Panchayats and to keep farmers updated about the lastest government schemes and news",
-      imgUrl: projImg3,
-      githubUrl: "https://github.com/example/ev-charging",
+        "Worked on building the web part of the ASL Detection platform using Mediapipe's Model for hand landmark detection which ouptuts a set of coordinates ,which secured First Place the Hack-a-League in Global Academy of Technology",
+      imgUrl: asl_web,
+      githubUrl: "https://github.com/H4cktivists/asl-web",
     },
   ];
 
@@ -76,10 +81,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="first">Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Hackathons</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">Technical Events</Nav.Link>
+                        <Nav.Link eventKey="second">Technical Events</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -95,18 +97,39 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
+                      <Tab.Pane eventKey="second">
                         <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
-                        </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
+                          <p>
+                            <h4>
+                              Won 1st Price in Hack-A-League a 24 hours
+                              Hackathon organized in Global Academy of
+                              Technology.
+                            </h4>
+                            <br />
+                            <h4>
+                              Secured 3rd Place in IISc Open Tech Hunt, a
+                              Cybersecurity and Encryption event conducted by
+                              IISC Bangalore in February 2024.
+                            </h4>
+                            <br />
+                            <h4>
+                              Co-organized and Hosted CTF Catputure the Flag , a
+                              Cybersecurity Event in DSATM , which had over 50
+                              participants.
+                            </h4>
+                            <br />
+                            <h4>
+                              Secured price for the domain "Best Report
+                              Generation" in Enigma a 24 hour Hackathon
+                              conducted by Jyothi Institude of Technology.
+                            </h4>
+                            <br />
+                            <h4>
+                              Won 1st and 2nd place in Quiz competitions
+                              conducted in DSATM and MS Ramiah College
+                              respectively.
+                            </h4>
+                          </p>
                         </Row>
                       </Tab.Pane>
                     </Tab.Content>
@@ -117,7 +140,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={""} alt="Image"></img>
+      {/* <img className="background-image-full" src={""} alt="Image"></img> */}
     </section>
   );
 };

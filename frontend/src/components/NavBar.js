@@ -71,14 +71,23 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#">
-                  <img src={""} alt="" />
+                <a href="https://linkedin.com/in/john-charles-jt">
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg"
+                    alt="John-charles-jt"
+                  />
                 </a>
-                <a href="#">
-                  <img src={""} alt="" />
+                <a href="https://github.com/John-C7">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+                    alt="Github: John-C7"
+                  />
                 </a>
-                <a href="#">
-                  <img src={""} alt="" />
+                <a href="https://www.leetcode.com/johnc8">
+                  <img
+                    src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg"
+                    alt="Johnc8"
+                  />
                 </a>
               </div>
               <HashLink to="#connect">
