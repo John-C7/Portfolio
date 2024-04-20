@@ -105,9 +105,12 @@ export const Banner = () => {
                       <span className="wrap">{text}</span>
                     </span>
                   </h2>
+                  <br />
                   <p className="description">
-                    CSE Student at Dayananda Sagar Academy of Technology and
-                    Management.
+                    <h4>
+                      CSE Student at Dayananda Sagar Academy of Technology and
+                      Management.
+                    </h4>
                   </p>
                 </div>
               )}

@@ -129,6 +129,11 @@ export const Projects = () => {
                               conducted in DSATM and MS Ramiah College
                               respectively.
                             </h4>
+                            <br />
+                            <h4>
+                              Secured a spot in the Top 15 for the Inter College
+                              Neopat March Codeathon 2024.
+                            </h4>
                           </p>
                         </Row>
                       </Tab.Pane>
